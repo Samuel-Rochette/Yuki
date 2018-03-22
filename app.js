@@ -6,7 +6,7 @@ const Events = Discordie.Events;
 const client = new Discordie();
 
 client.connect({
-  token: 'NDI1MjI0NDkzNTk0ODM2OTkz.DZEUvQ.4D4QvHv54sV_lVHXTTYmXRs46EI'
+  token: process.env.token
 });
 
 client.Dispatcher.on(Events.GATEWAY_READY, e => {
